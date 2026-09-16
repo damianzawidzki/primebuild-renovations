@@ -1,0 +1,256 @@
+/* Tablet layout */
+@media (max-width: 1024px) {
+    .logo img {
+        width: 195px;
+    }
+
+    .main-nav {
+        gap: 18px;
+    }
+
+    .main-nav a {
+        font-size: 14px;
+    }
+
+    .services-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .about-grid,
+    .contact-grid {
+        gap: 45px;
+    }
+}
+
+/* Mobile navigation and page layout */
+@media (max-width: 768px) {
+    .container {
+        width: calc(100% - 30px);
+    }
+
+    .header-content {
+        position: relative;
+        min-height: 72px;
+    }
+
+    .logo img {
+        width: 180px;
+    }
+
+    .menu-toggle {
+        position: relative;
+        z-index: 1001;
+        display: block;
+    }
+
+    .main-nav {
+        position: absolute;
+        top: 100%;
+        right: -15px;
+        left: -15px;
+        display: none;
+        flex-direction: column;
+        align-items: stretch;
+        gap: 0;
+        padding: 12px 20px 22px;
+        background-color: #111827;
+        box-shadow: 0 14px 25px rgba(0, 0, 0, 0.22);
+    }
+
+    .main-nav.is-open {
+        display: flex;
+    }
+
+    .main-nav a {
+        padding: 13px 4px;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+        font-size: 15px;
+    }
+
+    .main-nav .nav-button {
+        margin-top: 12px;
+        padding: 13px 18px;
+        border-bottom: 0;
+        text-align: center;
+    }
+
+    .hero {
+        min-height: auto;
+        background-position: 42% center;
+    }
+
+    .hero-overlay {
+        background: rgba(17, 24, 39, 0.78);
+    }
+
+    .hero-content {
+        padding-top: 85px;
+        padding-bottom: 85px;
+    }
+
+    .hero h1 {
+        font-size: clamp(40px, 11vw, 58px);
+        letter-spacing: -1.5px;
+    }
+
+    .hero-description {
+        font-size: 17px;
+    }
+
+    .service,
+    .projects,
+    .about-section,
+    .why-us,
+    .contact-section {
+        padding: 75px 0;
+    }
+
+    .section-heading {
+        margin-bottom: 42px;
+    }
+
+    .section-heading h2 {
+        font-size: clamp(32px, 8vw, 42px);
+    }
+
+    .projects-grid,
+    .why-us-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .project-card,
+    .project-card img {
+        height: 400px;
+        min-height: 400px;
+    }
+
+    .about-grid,
+    .contact-grid {
+        grid-template-columns: 1fr;
+        gap: 45px;
+    }
+
+    .about-image img {
+        height: 450px;
+    }
+
+    .about-cta-content {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .page-hero {
+        padding: 75px 0;
+    }
+
+    .page-hero h1 {
+        font-size: clamp(38px, 10vw, 54px);
+    }
+
+    .contact-form-wrapper {
+        padding: 34px;
+    }
+}
+
+/* Small mobile layout */
+@media (max-width: 600px) {
+    .services-grid,
+    .form-row {
+        grid-template-columns: 1fr;
+    }
+
+    .hero-buttons {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .hero-buttons .button {
+        width: 100%;
+    }
+
+    .hero-benefits {
+        flex-direction: column;
+        gap: 12px;
+    }
+
+    .service-card img {
+        height: 240px;
+    }
+
+    .about-image img {
+        height: 360px;
+    }
+
+    .about-cta .button {
+        width: 100%;
+    }
+
+    .contact-form-wrapper {
+        padding: 28px 22px;
+    }
+
+    .form-button {
+        width: 100%;
+    }
+}
+
+/* Very small mobile layout */
+@media (max-width: 420px) {
+    .logo img {
+        width: 155px;
+    }
+
+    .hero-content {
+        padding-top: 70px;
+        padding-bottom: 70px;
+    }
+
+    .hero h1 {
+        font-size: 38px;
+    }
+
+    .project-card,
+    .project-card img {
+        height: 350px;
+        min-height: 350px;
+    }
+
+    .project-overlay {
+        padding: 22px;
+    }
+
+    .contact-detail {
+        align-items: flex-start;
+        padding: 18px;
+    }
+
+    .contact-icon {
+        width: 45px;
+        height: 45px;
+        font-size: 19px;
+    }
+}
+/* Responsive footer */
+@media (max-width: 900px) {
+    .footer-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 45px;
+    }
+}
+
+@media (max-width: 600px) {
+    .footer-grid {
+        grid-template-columns: 1fr;
+        padding-top: 60px;
+        padding-bottom: 50px;
+    }
+
+    .footer-bottom-content {
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
+        gap: 8px;
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+}

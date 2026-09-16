@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="270" height="64" viewBox="0 0 270 64" role="img" aria-labelledby="logo-title">
+    <title id="logo-title">PrimeBuild Renovations</title>
+
+    <!-- Dach budynku -->
+    <path d="M6 30 L30 9 L54 30" fill="none" stroke="#f59e0b" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"></path>
+
+    <!-- Ściany budynku -->
+    <path d="M13 29 V54 H47 V29" fill="none" stroke="#ffffff" stroke-width="4" stroke-linejoin="round"></path>
+
+    <!-- Drzwi -->
+    <rect x="25" y="39" width="11" height="15" rx="1" fill="#f59e0b"></rect>
+
+    <!-- Nazwa firmy -->
+    <text x="68" y="38" fill="#ffffff" font-family="Arial, Helvetica, sans-serif" font-size="27" font-weight="800">
+        Prime
+    </text>
+
+    <text x="144" y="38" fill="#f59e0b" font-family="Arial, Helvetica, sans-serif" font-size="27" font-weight="800">
+        Build
+    </text>
+
+    <!-- Podpis pod nazwą -->
+    <text x="70" y="55" fill="#d1d5db" font-family="Arial, Helvetica, sans-serif" font-size="9" font-weight="700" letter-spacing="2.6">
+        RENOVATIONS
+    </text>
+</svg>
